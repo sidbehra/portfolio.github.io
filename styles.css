@@ -1,0 +1,187 @@
+body{
+	padding: 0;
+	margin: 0;
+}  /*to make the padding and margin 0*/
+
+.navUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+/*navbar list*/
+
+.navUL > li {
+    float: left;
+}
+
+.navUL >li a {   /*navbar list*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navUL >li a:hover { /*when you hover around*/
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+  /*this style gives width and height to all main divs*/
+.section{
+		width: 100%;
+		height: auto;
+}
+
+
+/*this is for about section*/
+#aboutSection{
+	background-color: #006400;
+	height: auto;
+	padding: 4vw;
+	display: flex;
+    flex-wrap: wrap;
+    color: white;
+
+
+  }
+
+#exp{
+	text-align: center;
+	color: white;
+	background-color:#006400;
+}
+
+#prophoto{
+   width: 40vw;
+
+}
+
+.flex-container{   /*to give page reposnsiveness*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+/*media queries*/
+@media screen and (max-width: 488px){   /*for small devices*/
+
+.photo{
+	width: 20vw;
+}
+
+.interestDiv{
+	width:35vw;
+	height:25vw;
+	margin-left:3vw;
+}
+
+.worksDiv{
+	width:30vw;
+	height:20vw;
+	margin-left:25px;
+}
+#aboutme{
+	width:90vw;
+   }
+
+ #prophoto{
+ 	width:60vw;
+ 	height:50vw;
+ 	padding-left:10vw;
+ }
+
+#expUL{
+	font-size: 2vw;
+}
+
+.worksDiv{
+	width:80vw;
+	height:40vw;
+	margin-top:5vw;
+}
+}
+
+
+@media screen and (min-width: 489px) and (max-width: 678px){  /*for medium sized devices*/
+
+.photo{
+	width: 30vw;
+}
+	 
+.interestDiv{
+	width:20vw;
+	height:20vw;
+	margin-left: 35px;
+}
+
+#aboutme{
+		width:40vw;
+   }
+
+#prophoto{
+ 	width:35vw;
+ 	height:35vw;
+ 	padding-left:10vw;
+ 	padding-top: 10vw;
+ }
+
+.worksDiv{
+	width:45vw;
+	height:30vw;
+	padding-top:2vw;
+	margin-left:2vw;
+}
+
+#exp{
+	padding-bottom:1vw;
+}
+
+}
+
+
+@media screen and (min-width: 679px){    /*for big devies like fablet or laptop*/
+
+.photo{
+	width: 20vw;
+}
+
+.interestDiv{
+	width:20vw;
+	height:20vw;
+	margin-left: 35px;
+}
+
+
+#aboutme{
+		width:45vw;
+		font-size: 2vw;
+ }
+
+ #prophoto{
+ 	width:35vw;
+ 	height:35vw;
+ 	padding-left: 5vw;
+ }
+
+ .worksDiv{
+	width:35vw;
+	height:25vw;
+	padding-top:2vw;
+	margin-left:2vw;
+}
+
+#exp{
+	font-size: 2vw;
+	padding-bottom:1vw;
+}
+}
